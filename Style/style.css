@@ -21,6 +21,22 @@ a{
     justify-content: center;
 }
 
+img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+ 
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+
+}
+
 
 /* Hero Section*/
  #hero {
@@ -61,7 +77,7 @@ a{
     animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) {
-
+animation: text_reveal_name .5s ease forwards;
     animation-delay: 2.5s;
 }
 
@@ -104,18 +120,108 @@ animation-delay: 0.5s;
     background-color: crimson;
  }
 
-
-
-
 /* End of Hero Section*/
 
+/* Service Section*/
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0; 
+}
+
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#services .section-title span{
+    color: crimson;
+}
+
+#services .service-item p{
+color: white;
+text-align: left;
+} 
+
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-size: cover;
+    margin:10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#services .service-item:nth-child(1) {
+    background-image: url(../img/services/dev-bg.jpg);
+}
+#services .service-item:nth-child(2) {
+    background-image: url(../img/services/networks-bg.jpg);
+}
+#services .service-item:nth-child(3) {
+
+    background-image: url(../img/services/hacking-bg.jpg);
+}
+#services .service-item:nth-child(4) {
+    background-image: url(../img/services/db-bg.jpg);
+
+}
+
+#services .service-item::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(60deg, #29323c 0%, rgb(53, 33, 89) 50%, #13406f 100%);
+    opacity: .7;
+    z-index: -1;
+}
+
+#services .service-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#services .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* End of Service Section*/
 
 /*@Keyframes*/
 @keyframes text_reveal_box {
     50%{
         width: 100%;
         left:0;
-    }
+    } 
 
     100%{
         width: 0%;
@@ -129,6 +235,11 @@ animation-delay: 0.5s;
     }
 
 }
-
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500;
+    }
+}
 
 /*End of @Keyframes*/
