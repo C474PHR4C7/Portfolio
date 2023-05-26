@@ -141,7 +141,7 @@ animation-delay: 0.5s;
     text-align: center;
 }
 
-#services .section-title span{
+.section-title span{
     color: crimson;
 }
 
@@ -170,6 +170,7 @@ text-align: left;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border-radius: 10px;
 }
 #services .service-item:nth-child(1) {
     background-image: url(../img/services/dev-bg.jpg);
@@ -211,10 +212,52 @@ text-align: left;
     text-transform: uppercase;
 }
 
-
-
-
 /* End of Service Section*/
+
+/* Projects Section*/
+
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+
+#projects .projects-header h1 {
+margin-bottom: 50px;
+}
+
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:80%;
+    margin:20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8fd3f4;
+}
+
+/* End of Projects Section*/
+
 
 /*@Keyframes*/
 @keyframes text_reveal_box {
