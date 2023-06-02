@@ -10,14 +10,37 @@
         /*custom γραμαμτοσειρά απο την google*/
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
     </style>
+
     <title>My Portfolio</title> <!--Custom τίτλος-->
 </head>
 
 <body>
 
-    <!--Header Section
-    2:30:36-->
-
+    <!--Header Section-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span>C</span>yber <span>R</span>aider</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Service">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Header Section-->
 
     <!--Hero Section-->
     <section id="hero">
@@ -165,7 +188,7 @@
                 <h2>Full Stack Developer & Happy Sailor</h2>
                 <p>Joined the Navy from the passion with the sea waves.
                     Fell in love with Web Development and Cyber Security.</p>
-                <a href="#" class="cta">Download CV</a>
+                <a href="cvsample.pdf" download="myCV.pdf" target="_blank" class="cta">Download CV</a>
             </div>
         </div>
 
@@ -233,7 +256,7 @@
 
     </section>
     <!-- End of Footer Section-->
-
+    <script src="./app.js"></script>
 </body>
 
 </html>
